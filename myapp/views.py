@@ -72,5 +72,11 @@ def signup():
         return response
     except Exception as e:
          logging.error(f"An Error occured {e}", exc_info=True)   
-#def homepage():
+def homepage():
+    datajson=requests.json()
+    data=json.load(datajson)
+    totalprice=data["price"]
+    phonenumber=data["phonenumber"]
+    apicall(phonenumber,totalprice)
+    
 
