@@ -1,0 +1,13 @@
+1.python -m e-market.
+(This is creating  a virtual environment. Ndio uki install packages zisiende all over your computer. The idea is that everything emarket stays at one place.you can give it any name btw.)
+
+2. pip install django
+3. (hii ni framework,it's got some scary python code you'll see.)
+
+4. pip install humanfriendly
+5. pip install pillow
+6. cd emarket 
+7. python manage.py makemigrations (this is for creating the database).
+8. python manage.py migrate 
+9. python manage.py runserver
+10.to quit the server "ctrl c"
