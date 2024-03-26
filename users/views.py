@@ -12,11 +12,9 @@ from django.views.generic.base import TemplateView
 from django.utils.decorators import method_decorator
 
 
-from Pharmiliar.mixins import(
+from emarket.mixins import(
 	AjaxFormMixin, 
-	reCAPTCHAValidation,
 	FormErrors,
-	RedirectParams,
 	)
 
 
