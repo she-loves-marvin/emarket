@@ -23,7 +23,7 @@ def product_list(request, format=None):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def drink_detail(request, id, format=None):
+def product_detail(request, id, format=None):
 
     try:
         item = Item.objects.get(pk=id)

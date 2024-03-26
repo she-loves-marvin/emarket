@@ -9,8 +9,8 @@ app_name= 'products'
 
 urlpatterns = [
 #we will use the restframework api to mainipulate the products.
-  path('drinks/', views.product_list),
-  path('drinks/<int:id>', views.drink_detail) , #this is the detail view for drinks
+  path('products/', views.product_list),
+  path('productDetails/<int:id>', views.product_detail) , #this is the detail view for PRODUCTS
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
